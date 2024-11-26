@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "ContextWise",
+    "description": "An AI Extension",
+    "version": "1.0",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": ["<all_urls>"],
+    "permissions": ["sidePanel"],
+    "side_panel": {
+    "default_path": "sidepanel/index.html"
+    },
+    "action": {
+        "default_icon": "images/bot.png",
+        "default_title": "Click Me"
+    }
+  }
