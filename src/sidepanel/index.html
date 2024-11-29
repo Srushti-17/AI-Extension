@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      body {
+        width: 400px;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+      }
+      .text {
+        margin-top: 10px;
+        white-space: pre-wrap;
+      }
+      #loading {
+        display: none;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text Summarizer</h1>
+    <div id="loading">Generating summary...</div>
+    <div id="result" class="text"></div>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
