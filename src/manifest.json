@@ -7,12 +7,19 @@
       "service_worker": "background.js"
     },
     "host_permissions": ["<all_urls>"],
-    "permissions": ["sidePanel"],
+    "permissions": ["sidePanel", "activeTab"],
     "side_panel": {
     "default_path": "sidepanel/index.html"
     },
     "action": {
         "default_icon": "images/bot.png",
         "default_title": "Click Me"
+    },
+    "content_scripts": [
+    {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
     }
+    ]
+
   }
